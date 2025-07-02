@@ -101,23 +101,8 @@ let timer = document.querySelector(".timer");
 function startTimer(){
     timer.style.display = "block";
     function displayTimer(){
-        /*
-            How to caluculate the time is that
-            1) Initialize a variable that actually stores no.of seconds
-            2) when ever this function displayTimer is called then we need to increment the
-             counter variable , as each call of this function is considered as
-             1sec in regular time. Why? because we need to get the actual time when
-             this thing needs counted.
-            How to count Hours, Minutes & Seconds?
-            counter = 3725
-            we know 1hr = 3600 seconds ,
-            to count 1hr using counter value, we use '/(division operator)' btw 
-            counter and 3600 sec. division operator is used to perform floor divison
-            3725/3600 = >1
-            remainder 3725%3600 =>no.of minutes in seconds , so we need to convert back
-            to minutes, 1minute = 60seconds
+
         
-        */
        let totalSeconds = counter;
        let hours = Number.parseInt(totalSeconds / 3600);
        totalSeconds = totalSeconds % 3600;
